@@ -29,7 +29,7 @@ class Solution {
         start=head;
         ListNode curr =head;
         if(left==right) return head;
-        while(curr!=null &&count<right)
+        while(curr!=null && count<right)
         {
             if(count<left) prev=curr;
             if(count==left)
@@ -44,7 +44,6 @@ class Solution {
         prev.next=rev;
         else head = rev;
         start.next=temp;
-
         return head;
     }
 }
