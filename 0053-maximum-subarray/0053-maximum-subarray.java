@@ -6,7 +6,7 @@ class Solution {
         {
             currSum+=nums[i];
             if(currSum>maxSum) maxSum=currSum;
-            if(currSum<0)currSum=0;
+            if(currSum<0) currSum = 0;
         }
         return maxSum;
     }
