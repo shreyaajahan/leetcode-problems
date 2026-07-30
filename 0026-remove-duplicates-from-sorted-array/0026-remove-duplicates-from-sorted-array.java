@@ -1,11 +1,11 @@
 class Solution {
-    public int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] arr) {
         int j = 1;
-        for(int i=1;i<nums.length;i++)
+        for(int i=1;i<arr.length;i++)
         {
-            if(nums[i]!=nums[i-1])
+            if(arr[i]!=arr[i-1]) 
             {
-                nums[j]=nums[i];
+                arr[j]=arr[i];
                 j++;
             }
         }
