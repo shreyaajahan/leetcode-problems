@@ -3,13 +3,10 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap<>();
         for(int i=0;i<nums.length;i++)
         {
-            int diff = target-nums[i];
-            if(map.containsKey(diff))
-            {
-                return new int[]{map.get(diff),i};
-            }
-            map.put(nums[i],i);
+            int comp = target-nums[i];
+            if(map.containsKey(comp)) return new int[]{map.get(comp),i};
+            else map.put(nums[i],i);
         }
-        return new int[]{};
-    }
+        return new int[]{};    
+        }
 }
